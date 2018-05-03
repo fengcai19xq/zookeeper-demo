@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zhaogang.zk</groupId>
+  <artifactId>ZooKeeper</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ZooKeeper Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+   <properties>
+        <saturn.version>3.0.3-SNAPSHOT</saturn.version>
+        <zookeeper.version>3.4.6</zookeeper.version>
+        <curator.version>2.4.2</curator.version>
+   </properties>
+  <dependencies>
+    <dependency>
+          <groupId>com.zhaogang.saturn</groupId>
+            <artifactId>saturn-layer-web-springmvc</artifactId>
+            <version>${saturn.version}</version>
+            <exclusions>
+              <exclusion>
+                 <groupId>org.mortbay.jetty</groupId>
+                 <artifactId>servlet-api</artifactId>
+              </exclusion>
+            </exclusions>
+    </dependency>
+    <dependency>
+	    <groupId>org.apache.zookeeper</groupId>
+	    <artifactId>zookeeper</artifactId>
+	    <version>${zookeeper.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.curator</groupId>
+	    <artifactId>curator-framework</artifactId>
+	    <version>${curator.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.curator</groupId>
+	    <artifactId>curator-recipes</artifactId>
+	    <version>${curator.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.apache.curator</groupId>
+	  <artifactId>curator-examples</artifactId>
+	  <version>2.8.0</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>ZooKeeper</finalName>
+  </build>
+</project>
