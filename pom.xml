@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
    <properties>
         <saturn.version>3.0.3-SNAPSHOT</saturn.version>
-        <zookeeper.version>3.4.6</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
         <curator.version>2.4.2</curator.version>
    </properties>
   <dependencies>
